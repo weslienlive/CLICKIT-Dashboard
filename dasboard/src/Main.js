@@ -13,6 +13,15 @@ export default class Main extends Component{
                     <StyledOverview>
                         <StyledProfile>
                         </StyledProfile>
+
+                        <StyledRevenueBox>
+                        </StyledRevenueBox>
+
+                        <StyledOrdersBox>
+                        </StyledOrdersBox>
+
+                        <StyledSalesBox>
+                        </StyledSalesBox>
                     </StyledOverview>
 
                     <StyledSales>
@@ -33,7 +42,7 @@ export default class Main extends Component{
 // contentor principal do css grid
 const Grid = styled.div`
 display:grid;
-grid-template-columns:repeat(5, 400px);
+grid-template-columns:repeat(4,30px);
 grid-template-rows: 80px 300px 500px 500px 500px;
 `;
 
@@ -47,6 +56,7 @@ background-color: purple;
 // style para o Overview
 const StyledOverview = styled.div`
 display:grid;
+grid-template-colums: repeat(4,300px);
 grid-column: 1/ span 5;
 height: 300px;
 background-color: yellow;
@@ -75,9 +85,43 @@ background-color:violet;
 
 // style para Profile
 const StyledProfile = styled.div`
-gri
-background-color: pink;
-width: 400px;
+margin: px;
+grid-column:1;
+align-self:center;
+background-color:darksalmon;
+width: 300px;
 height:280px;
 `;
 
+const StyledRevenueBox = styled.div`
+margin: 5px;
+grid-column:2;
+align-self:center;
+background-color:cornsilk;
+width: 300px;
+height: 280px;
+`;
+
+
+const StyledOrdersBox = styled.div`
+margin: 5px;
+grid-column:3;
+align-self:center;
+background-color: brown;
+width: 300px;
+height: 280px;
+`;
+
+const StyledSalesBox = styled.div`
+margin: 5px;
+grid-column:4;
+align-self:center;
+background-color:darkgrey;
+width: 300px;
+height: 280px;
+`;
+
+const StyledSalesHeader = styled.div`
+grid-row:1;
+background-color:lightslategray;
+`;
