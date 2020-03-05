@@ -12,6 +12,12 @@ export default function App(){
                         <Profile>
                             <ProfilePicture>
             `               </ProfilePicture>
+                    
+                            <ProfileName>
+                            </ProfileName>
+
+                            <ProfileNav>
+                            </ProfileNav>
                         </Profile>
 
                         <RevenueBox>
@@ -85,12 +91,35 @@ background-color:violet;
 const Profile = styled.div`
 display:grid;
 grid-template-columns: repeat(3, 90px);
-grid-template-row: repeat(3, 100px);
+grid-template-rows: 100px 150px 50px;
 grid-column:1;
 align-self:center;
 background-color:darksalmon;
 width: 300px;
 height:280px;
+`;
+
+const ProfilePicture = styled.div`
+grid-row: 1;
+grid-column:2;
+border-radius:100%;
+background-color: khaki;
+height: 150px;
+width:150px;
+`;
+
+const ProfileName = styled.div`
+grid-row:2;
+background-color: deeppink;
+height:100px;
+width:300px;
+`;
+
+const ProfileNav = styled.div`
+grid-row:3;
+background-color:dodgerblue;
+height:50px;
+width:300px;
 `;
 
 const RevenueBox = styled.div`
@@ -126,7 +155,3 @@ grid-row:1;
 background-color:lightslategray;
 `;
 
-const ProfilePicture = styled.div`
-grid-row: 2
-background-color: khaki;
-`;

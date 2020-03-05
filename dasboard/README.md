@@ -18,4 +18,5 @@ encontrar, idenpendentemente do css grid settings
   variaveis, o tipo de fonte, o tamanho da fonte, o tipo de animacao, as
   ferramentas usadas para construir o dashboard
 - [ ] Desenhar o wireframe no AI
-
+- [ ] Instalar pacl 
+- [ ] Instalar xbacklight
